@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youtuber Favorit - Windah Basudara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffe4e1;
+      color: #3c3c3c;
+    }
+
+    .navbar {
+      background-color: #403c3a;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #d9b99b !important;
+      font-size: 1.6rem;
+    }
+
+    .nav-link {
+      color: #e8e6e3 !important;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #fcd5ce !important;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #403c3a;
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 50%;
+      border: 4px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+
+    .info {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .info h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .video {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .video-thumbnail {
+      position: relative;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .video-thumbnail img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .video-thumbnail:hover img {
+      opacity: 0.9;
+    }
+
+    .video-thumbnail .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+      text-shadow: 0 0 10px black;
+      pointer-events: none;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: #c97b63;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-button:hover {
+      background-color: #a65b4a;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Youtuber Favorite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="Jadwal.html">Course Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="Playlist.html">Playlist</a></li>
+        <li class="nav-item"><a class="nav-link active" href="youtube.html">Youtuber Favorite</a></li>
+        <li class="nav-item"><a class="nav-link" href="list film.html">Film</a></li>
+        <li class="nav-item"><a class="nav-link" href="list travel.html">Travel</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <h2></h2>
+    
+    <div class="profile">
+      <img src="windut.jpg" alt="Windah Basudara">
+      <div class="info">
+        <h3>Windah Basudara</h3>
+        <p>Windah adalah salah satu YouTuber gaming paling terkenal di Indonesia. Dikenal dengan gaya yang nyentrik dan kocak, dia sering memainkan game horror, action, dan juga suka berbagi cerita-cerita lucu yang relate dengan penontonnya. Selain hiburan, Windah juga aktif berdonasi dan menyebarkan kebaikan lewat komunitasnya.</p>
+        <a class="btn btn-danger" href="https://www.youtube.com/@WindahBasudara" target="_blank">Kunjungi Channel</a>
+
+      </div>
+    </div>
+
+    <div class="video">
+      <div class="video-thumbnail">
+        <a href="https://www.youtube.com/watch?v=6w7mLJ2Vm0M" target="_blank">
+          <img src="https://img.youtube.com/vi/6w7mLJ2Vm0M/hqdefault.jpg" alt="Windah video">
+          <div class="play-button">▶</div>
+        </a>
+      </div>
+    </div>
+
+    <a href="dashboard.html" class="back-button">Back to Dashboard</a>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
